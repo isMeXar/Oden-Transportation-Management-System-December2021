@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ClientPane" prefHeight="483.0" prefWidth="590.0" style="-fx-background-color: white;" stylesheets="@CSS/Client-Reciever-Country.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myapp.ClientsController">
+   <children>
+      <TableView fx:id="TvClient" layoutX="223.0" layoutY="51.0" onMouseClicked="#handleMouseAction" prefHeight="373.0" prefWidth="348.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="35.0" text="ID" />
+            <TableColumn fx:id="colcin" minWidth="0.0" prefWidth="72.0" text="CIN" />
+            <TableColumn fx:id="colname" editable="false" minWidth="0.0" prefWidth="135.0" text="Full Name" />
+            <TableColumn fx:id="colphone" prefWidth="88.0" text="Phone" />
+            <TableColumn fx:id="colemail" prefWidth="202.0" text="Email" />
+         </columns>
+      </TableView>
+      <Label layoutX="7.0" layoutY="2.0" text="Clients information" textFill="#0b83f3">
+         <font>
+            <Font name="Century Gothic" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUpdate" layoutX="19.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="190.0" text="Update">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnDelete" layoutX="19.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="190.0" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="27.0" layoutY="65.0" text="ID">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="116.0" text="CIN">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="168.0" text="Name">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="220.0" text="Email address">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClear" layoutX="19.0" layoutY="391.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="190.0" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="idField" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="83.0" prefHeight="29.0" prefWidth="190.0" styleClass="field">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="cinField" alignment="CENTER" layoutX="21.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="190.0" styleClass="field">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nomField" alignment="CENTER" layoutX="21.0" layoutY="186.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="190.0" styleClass="field">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailField" layoutX="21.0" layoutY="239.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="190.0" styleClass="field">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextField>
+      <Line endX="157.5" layoutX="-13.0" layoutY="30.0" startX="11.0" stroke="#0b83f3" strokeWidth="1.5" />
+      <Label layoutX="25.0" layoutY="274.0" text="Phone number">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="telField" alignment="CENTER" layoutX="21.0" layoutY="293.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="190.0" styleClass="field">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="searchField" alignment="CENTER" layoutX="222.0" layoutY="431.0" prefHeight="34.0" prefWidth="350.0" promptText="Search.." style="-fx-background-color: #303030; -fx-text-fill: #0b83f3; -fx-background-radius: 2;">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="25.0" fitWidth="34.0" layoutX="231.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/search_in_list_25px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

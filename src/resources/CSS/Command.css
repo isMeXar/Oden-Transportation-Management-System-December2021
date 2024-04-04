@@ -1,0 +1,82 @@
+
+.combo .cell{
+    -fx-text-fill: #0b83f3;
+    -fx-font-size: 14;
+    -fx-font-family: "Century Gothic";
+}
+.field{
+    -fx-background-color: #f7f7f7;
+    -fx-background-radius: 3;
+    -fx-text-fill: #0b83f3;
+}
+.field:hover{
+    -fx-border-width: 1.2;
+    -fx-border-color: #0b83f3;
+    -fx-border-radius:3;
+}
+#btnSave{-fx-background-color: #303030;}
+#btnClear{-fx-background-color: white;-fx-border-color: #0b83f3;-fx-border-radius: 4}
+#btnAdd{-fx-background-color: #0f62af;}
+#btnDelete{-fx-background-color: #9c2323;}
+
+#btnSave:hover{-fx-background-color: #383737;}
+#btnClear:hover{-fx-background-color: #f1efef;-fx-border-color: #0a71d0;-fx-border-radius: 4}
+#btnAdd:hover{-fx-background-color: #0b83f3;}
+#btnDelete:hover{-fx-background-color: #bb0000;}
+
+.table-view {
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size : 20;
+    -fx-background-color: #0b83f3;
+}
+.table-view .column-header .label{
+
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+.table-view .cell{
+    -fx-cell-size: 30;
+    -fx-alignment: center;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+}
+.table-row-cell:selected .text {
+    -fx-fill : white ;
+
+}
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(  #2D75E8,80%);
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}
+

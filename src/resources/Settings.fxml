@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="800.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myapp.SettingsController">
+    <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="758.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@img/exit.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="718.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@img/minimize.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="exitBtn" layoutX="756.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CloseButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button fx:id="minimizeBtn" layoutX="715.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimizeBut" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="60.0" style="-fx-background-color: #0b83f3;">
+      <children>
+         <ImageView fitHeight="65.0" fitWidth="54.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/logof.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="76.0" fitWidth="59.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/fffclient.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="65.0" fitWidth="69.0" layoutX="-2.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/disconnect.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="65.0" fitWidth="69.0" layoutX="-2.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/commandeicon.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="65.0" fitWidth="61.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/setting.png" />
+            </image>
+         </ImageView>
+      </children></AnchorPane>
+</AnchorPane>

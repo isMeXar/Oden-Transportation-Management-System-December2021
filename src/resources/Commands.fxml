@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="483.0" prefWidth="590.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="27.0" layoutY="6.0" text="Commands information" textFill="#0b83f3">
+         <font>
+            <Font name="Century Gothic" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

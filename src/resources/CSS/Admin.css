@@ -1,0 +1,31 @@
+#UpdateImg{
+    -fx-background-radius: 50;
+    -fx-background-color: #303030;
+    -fx-border-radius: 50;
+}
+#UpdateImg:hover{
+    -fx-background-color: black;
+}
+.field{
+    -fx-background-color: #f7f7f7;
+    -fx-background-radius: 3;
+    -fx-text-fill: #0b83f3;
+    -fx-alignment: center;
+}
+.field:hover{
+    -fx-border-width: 1.2;
+    -fx-border-color: #0b83f3;
+    -fx-border-radius:3;
+}
+#imagePane{
+    -fx-background-color: #303030;
+    -fx-border-style: solid;
+    -fx-border-width: 0.5;
+    -fx-border-color: #0b83f3;
+}
+#btnClear{-fx-background-color: #303030;}
+#btnClear:hover{-fx-background-color: white;-fx-border-radius: 2;-fx-background-radius: 2;-fx-border-color: #0b83f3}
+
+#btnSave:hover{-fx-background-color: #0b83f3}
+#btnSave{-fx-background-color: #095ba8}
+

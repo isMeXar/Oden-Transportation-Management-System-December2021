@@ -1,0 +1,44 @@
+#LoginPane{
+    -fx-background-color: #0b83f3;
+}
+#forgotPane{
+    -fx-background-color: #303030;
+}
+.field{
+    -fx-background-color: white;
+    -fx-text-fill: #0b83f3;
+
+}
+#emailfield{
+    -fx-background-color: #303030;
+    -fx-background-radius: 2;
+    -fx-border-color: #0b83f3;
+    -fx-border-radius: 2;
+    -fx-text-fill: #0b83f3;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 14;
+}
+.submitBtn{
+    -fx-background-radius: 2;
+    -fx-background-color: #0b83f3;
+    -fx-text-fill: #fff;
+}
+.submitBtn:hover{
+    -fx-background-color: #0960b1;
+}
+#connectBtn{
+    -fx-background-color: #0b83f3;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 0;
+}
+#connectBtn:hover{
+    -fx-background-color: #303030;
+    -fx-text-fill: #0b83f3;
+}
+#forgotPassBtn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #0b83f3;
+}
+#forgotPassBtn:hover{
+    -fx-text-fill: #0f5a87;
+}

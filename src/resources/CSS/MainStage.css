@@ -1,0 +1,15 @@
+.menuButton{
+    -fx-background-color: transparent;
+    -fx-text-fill: White;
+    -fx-font-size: 16;
+}
+.menuButton:hover{
+    -fx-text-fill: #0b83f3;
+    -fx-background-color: white;
+}
+#btnClient:hover{-fx-graphic: url("../img/search_client_b40px.png");}
+#btnCommand:hover{-fx-graphic: url("../img/handle_with_care_b40px.png");}
+#btnReciever:hover{-fx-graphic: url("../img/reciverb.png");}
+#btnCountry:hover{-fx-graphic: url("../img/pickup_point_64pxb.png");}
+#btnAdmin:hover{-fx-graphic: url("../img/adminb.png");}
+#btnDisconnect:hover{-fx-graphic: url("../img/disconnectB.png");}

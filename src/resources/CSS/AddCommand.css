@@ -1,0 +1,40 @@
+#AddCommand{
+    -fx-background-color: #303030;
+}
+
+#btnSave{
+    -fx-background-color: #0b83f3;
+}
+#btnSave:hover{
+     -fx-background-color: #0b4a87;
+}
+
+#btnBack{
+    -fx-background-color:#303030;
+    -fx-border-color: #0b83f3;
+    -fx-border-radius:4;
+}
+#btnBack:hover{
+    -fx-background-color: #171717;
+}
+
+.field{
+    -fx-background-color: White;
+    -fx-background-radius: 3;
+    -fx-text-fill: #0b83f3;
+}
+.field:hover{
+    -fx-border-width: 1.2;
+    -fx-border-color: #0b83f3;
+    -fx-border-radius:3;
+}
+
+#cbCountry{
+    -fx-background-color: White;
+    -fx-background-radius: 3;
+}
+#cbCountry .cell{
+    -fx-text-fill: #0b83f3;
+    -fx-font-size: 14;
+    -fx-font-family: "Century Gothic";
+}

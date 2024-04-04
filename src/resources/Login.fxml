@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="LoginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="800.0" stylesheets="@CSS/Login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myapp.LoginController">
+
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="310.0">
+      <children>
+         <ImageView fitHeight="211.0" fitWidth="223.0" layoutX="37.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@img/logo.png" />
+            </image>
+         </ImageView>
+         <Text fill="WHITE" layoutX="48.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome&#10;to the service&#10;management system" textAlignment="RIGHT">
+            <font>
+               <Font name="Century Gothic" size="24.0" />
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="191.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed by&#10;MeXaR_" textAlignment="RIGHT">
+            <font>
+               <Font name="Century Gothic" size="14.0" />
+            </font>
+         </Text>
+      </children>
+
+    </AnchorPane>
+    <AnchorPane fx:id="anchorpane2" layoutX="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="491.0" style="-fx-background-color: #f3f3f3;">
+
+        <Text fill="#0b83ea" layoutX="115.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login to your account">
+            <font>
+                <Font name="Century Gothic" size="24.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="490.0" />
+        <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="12.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/user.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="40.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="490.0" />
+        <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="13.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@img/lock.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="usernameField" alignment="CENTER" layoutX="75.0" layoutY="172.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="342.0" promptText="Username .." styleClass="field">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="75.0" layoutY="225.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="342.0" promptText="Password ..." styleClass="field">
+            <font>
+                <Font name="Century Gothic" size="14.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="connectBtn" layoutX="84.0" layoutY="293.0" mnemonicParsing="false" onAction="#LoginButOnAction" prefHeight="40.0" prefWidth="154.0" text="Login" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="forgotPassBtn" alignment="BASELINE_LEFT" layoutX="264.0" layoutY="300.0" mnemonicParsing="false" onAction="#forgotPassword" prefHeight="25.0" prefWidth="135.0" text="Forgot password ?" textFill="#0b83f3" textOverrun="CLIP">
+            <font>
+                <Font name="Century Gothic" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Text fill="#929394" layoutX="37.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Support &#10;To obtain access to this app or any question &#10;Submit an email message to ">
+            <font>
+                <Font name="Century Gothic" size="13.0" />
+            </font>
+        </Text>
+        <Text fill="#0b83f3" layoutX="218.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="abdelilah.adrii01@gmail.com" underline="true">
+            <font>
+                <Font name="Century Gothic" size="13.0" />
+            </font>
+        </Text>
+        <Button fx:id="exitBtn" layoutX="450.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CloseButtonAction" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+        <Button fx:id="minimizeBtn" layoutX="412.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimizeBut" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/minimize.png" />
+               </image>
+            </ImageView>
+         </graphic>
+        </Button>
+      <Label fx:id="errorText" layoutX="84.0" layoutY="342.0" prefHeight="29.0" prefWidth="310.0" textFill="#f51212">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Pane fx:id="forgotPane" layoutY="416.0" prefHeight="102.0" prefWidth="491.0">
+         <children>
+            <Text fill="#0b83f3" layoutX="19.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We will send you an email so you can log in successfully! ">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="emailfield" layoutX="43.0" layoutY="47.0" prefHeight="34.0" prefWidth="257.0" />
+            <Button fx:id="submitBtn" alignment="CENTER" contentDisplay="RIGHT" graphicTextGap="5.0" layoutX="306.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submit" prefHeight="33.0" prefWidth="135.0" styleClass="submitBtn" text="Submit" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/email_send_fff40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Line endX="399.0" layoutX="96.0" layoutY="6.0" startX="-100.0" stroke="#0b83f3" />
+            <Line endX="399.0" layoutX="94.0" layoutY="96.0" startX="-100.0" stroke="#0b83f3" />
+         </children>
+      </Pane>
+
+    </AnchorPane>
+
+</AnchorPane>
