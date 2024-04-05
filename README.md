@@ -1,5 +1,5 @@
 # Oden-Transportation-Management-System-December2021
-![Header Image](/src\resources\img\logo_app.png)
+![Header Image](src/resources/img/logo_app.png)
 Introducing Oden-Transportation Management System, a dynamic Java-based application engineered to revolutionize the way transportation agencies manage their operations. With its innovative approach, Oden-Transportation not only streamlines package and client management but also provides tailored user accounts for each agency user, fostering enhanced collaboration and efficiency.
 
 At the heart of Oden-Transportation is its robust account management system, which grants each agency user personalized access to the platform's suite of features. From package and client information management to pricing calculations and beyond, users can seamlessly navigate the application to fulfill their specific responsibilities and tasks.
